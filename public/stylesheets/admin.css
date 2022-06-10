@@ -1,0 +1,440 @@
+* {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    font-family: baloo
+}
+
+button {
+    background: 0;
+    border: 0;
+    background: 0 0
+}
+
+.event_title_positioning,
+.settings_header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.settings_header {
+    height: 768px;
+    background: #fff;
+    position: absolute
+}
+
+.event_title_positioning {
+    height: 97px;
+    background: #2a2962;
+    position: absolute
+}
+
+.event_title {
+    background: rgb(39, 77, 118, .1)
+}
+
+.event_name {
+    position: absolute;
+    left: 11px;
+    width: 90%;
+    color: #000;
+    top: 26px;
+    font-size: 16px
+}
+
+.settings_title {
+    position: absolute
+}
+
+.settings_title {
+    width: 190px;
+    color: #2e2e2e;
+    top: 188px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px
+}
+
+.title {
+    position: absolute
+}
+
+.title {
+    width: auto;
+    color: #fff;
+    top: 55px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px
+}
+
+.settings_header1,
+.settings_header2 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border: #fff solid 2px
+}
+
+.center,
+.event_title {
+    width: 466px;
+    position: absolute;
+    overflow: hidden
+}
+
+.center {
+    height: 265px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.event_title {
+    height: 55px;
+    top: 0
+}
+
+.button_text {
+    position: absolute
+}
+
+.event_title_text {
+    width: 80px;
+    color: #848788;
+    position: absolute;
+    top: 10px;
+    left: 11px
+}
+
+.button_text {
+    width: 100px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px
+}
+
+.events_center {
+    width: 50%
+}
+
+.log_out_button {
+    width: 100px;
+    height: 34px;
+    background: #2a2962;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    border: #fff solid 1px;
+    overflow: visible
+}
+
+.event_content,
+.event_content_positioning {
+    height: 174px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.event_content,
+.event_content_positioning {
+    top: 60%
+}
+
+.event_content_positioning {
+    width: 422px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, .06);
+    overflow: visible;
+    margin-top: 10%
+}
+
+.event_content {
+    width: 622px;
+    background: #e9edf1;
+    border: #274d76 solid 1px
+}
+
+.event_content_text {
+    width: 85px;
+    color: #0f0f0f;
+    position: absolute;
+    top: 30px;
+    left: 45%;
+    font-size: 18px
+}
+
+.text {
+    position: absolute
+}
+
+.text {
+    width: auto;
+    color: #4b4b4b;
+    margin: auto;
+    margin-left: 0;
+    font-size: 10px
+}
+
+.no_events {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.no_events {
+    color: #c5c5c5;
+    font-size: 20px;
+    top: 60%
+}
+
+.new_event,
+.new_event_button {
+    width: 466px;
+    height: 50px;
+    position: absolute;
+    overflow: visible
+}
+
+.new_event_button {
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.new_event {
+    background: #2a2962;
+    top: 0;
+    left: 0;
+    border: #c4c4c4 solid 2px
+}
+
+.new_event_text,
+.no_events_log_out_button {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.new_event_text {
+    width: auto;
+    color: #fff;
+    top: 26px;
+    font-size: 16px
+}
+
+.no_events_log_out_button {
+    width: 100px;
+    height: 34px;
+    background: #2a2962;
+    top: 80%;
+    border: #fff solid 1px;
+    overflow: visible
+}
+
+.log_out_text {
+    width: 55px;
+    color: #fff;
+    position: absolute;
+    top: 3px;
+    left: 23px;
+    font-size: 16px
+}
+
+.response {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 15px
+}
+
+.response2 {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 55%;
+    font-size: 15px
+}
+
+.response3 {
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 42%;
+    font-size: 15px
+}
+
+.button_no {
+    font-size: 15px;
+    background-color: maroon;
+    padding: 20px;
+    color: #fff;
+    text-align: center
+}
+
+.message {
+    position: absolute;
+    margin-top: 37%;
+    margin-left: 35%;
+    padding-left: 5px;
+    font-size: 17px
+}
+
+.date {
+    background-color: #fff;
+    color: #000;
+    width: 800px;
+    margin-left: 10%;
+    text-align: center
+}
+
+.time_from {
+    margin-left: 100px;
+    border: none;
+    background-color: #a3c1ad;
+    width: 100px;
+    height: 50px
+}
+
+.time_button {
+    margin-left: 20px;
+    border: none;
+    background-color: #add8e6;
+    width: 50px;
+    height: 30px;
+    color: #000
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+header,
+main {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-size: 13px;
+    line-height: 21px;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    min-height: 100%
+}
+
+.info {
+    z-index: 3;
+    margin-top: -73px;
+    position: relative
+}
+
+.main {
+    justify-content: center;
+    border-radius: 8px;
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    margin-top: 41px;
+    padding: 12px 14px 11px 21px
+}
+
+.header-2 {
+    font-size: 33px
+}
+
+.event_content1 {
+    height: 174px;
+    width: 300px;
+    background: #e9edf1;
+    border: #274d76 solid 1px;
+    position: absolute
+}
+
+.event_content_positioning1 {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin-left: 145%;
+    margin-top: 7%
+}
+
+.event_content2 {
+    height: 600px;
+    width: 1000px;
+    background: #e9edf1;
+    border: #274d76 solid 1px;
+    position: absolute
+}
+
+.event_content_positioning2 {
+    height: 300px;
+    position: relative;
+    margin-left: 40%;
+    margin-top: 15%
+}
+
+.event_content_text2 {
+    width: 150px;
+    color: #0f0f0f;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 18px
+}
+
+.new_event_button {
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#authorize_button {
+    width: 250px;
+    height: 34px;
+    background: #2a2962;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    border: #fff solid 1px;
+    overflow: visible;
+    z-index: 1
+}
+
+.cal_text {
+    width: 200px;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 23px;
+    font-size: 16px
+}

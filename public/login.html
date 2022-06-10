@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://kit.fontawesome.com/383427301d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baloo&amp;display=swap" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--google auth-->
+  <meta name="google-signin-scope" content="profile email" />
+  <meta name="google-signin-client_id"
+    content="1056683511837-roifnl5jkqh57j4kk0cpnh3c1ipt59sv.apps.googleusercontent.com" />
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-plugin_name" content="APP" />
+  <!--google auth-->
+  <!-- sweet alert-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Login</title>
+  <script src="javascripts/login.js" defer></script>
+  <link href="stylesheets/login.css" rel="stylesheet" />
+</head>
+
+<body onload="login()">
+  <div class="hero">
+    <!--hero div-->
+
+    <!--button-->
+    <div class="form-box" id="formBOX" style="bottom: 30px">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn-login" style="color: white" onclick="login()">
+          login
+        </button>
+        <button type="button" class="toggle-btn-signup" onclick="signup()">
+          sign up
+        </button>
+      </div>
+
+      <div class="g-signin2" id="googleButton" data-onsuccess="onSignIn" data-theme="dark"></div>
+
+      <!--user login input div-->
+
+      <form id="login" class="input-group">
+        <h3 id="noUserError" style="display: none">Filler</h3>
+        <input type="email" class="input-field" name="email" placeholder="Enter Email Address" />
+        <h3 style="color: #2a2962">OR</h3>
+        <input type="text" class="input-field" name="username" placeholder="Enter your username" />
+        <h3 style="color: #2a2962">AND</h3>
+        <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
+        <button type="button" onclick="Login()" class="submit-btn">
+          Login
+        </button>
+      </form>
+
+      <!--user sign up input div-->
+
+      <form id="register" class="input-group">
+        <div id="signupBox" style="position: relative; bottom: 60px">
+          <h3 id="signupError" style="display: none">Filler</h3>
+          <input type="email" name="email" class="input-field" placeholder="*Enter Email Address" required />
+          <!--email-->
+          <p id="emailError" style="display: none"></p>
+          <input type="text" name="username" class="input-field" placeholder="*Enter username" required />
+          <!--username-->
+          <p id="usernameError" style="display: none"></p>
+          <input type="text" name="name" class="input-field" placeholder="*Enter Full Name" required />
+          <p id="nameError" style="display: none"></p>
+          <!--full name-->
+          <input type="number" name="phone_number" class="input-field" placeholder="*Enter Phone Number" required />
+          <!--phone number-->
+          <p id="phoneError" style="display: none"></p>
+          <input type="password" name="password-1" class="input-field" placeholder="*Enter Password" required />
+          <!--password-->
+          <p id="PasswordError" style="display: none"></p>
+          <input type="password" name="password" class="input-field" placeholder="*Confirm Password" required />
+          <p id="PasswordError2" style="display: none"></p>
+          <input type="checkbox" class="check-box" required />
+          <span>*I agree the information is correct</span>
+          <p id="checkError" style="display: none"></p>
+          <button type="button" onclick="Signup()" class="submit-btn">
+            Sign up!
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--hero div end-->
+</body>
+
+</html>

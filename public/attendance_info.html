@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;display=swap" rel="stylesheet">
+    <link href="stylesheets/attendance_info.css" rel="stylesheet">
+    <script src="javascripts/attendance.js"></script>
+    <title>Event Attendance Information</title>
+</head>
+
+<body onload="get_attendance_information()">
+    <header class="settings_header"></header>
+    <div class="event_title_positioning"></div><span class="title">Guest Attendance List</span>
+    <div class="events_center">
+
+            <button class="log_out_button" onclick="settings()"><span class="log_out_text">Profile</span></button>
+            <button class="back_button" onclick="events()">Back</button>
+
+
+
+        <div class="event_content_positioning2">
+            <div class="event_content2"></div><span class="event_content_text2">Guest Info</span>
+            <div class="event_content_elements2">
+            <div class= "scroll"></div>
+                <button class="more_button4" onclick="viewMap()"><span class="more_text3">View Map</span></button>
+                <button class="more_button3"><span class="more_text3" onclick=gotoEvents()>Close</span></button>
+                <button class="more_button5" onclick="viewCalendar()"><span class="more_text3">View Calendar</span></button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

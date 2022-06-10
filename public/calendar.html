@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link href="stylesheets/calendar.css" rel="stylesheet" />
+    <script src="https://unpkg.com/vue@legacy"></script>
+    <script src="https://unpkg.com/vue-cal@latest"></script>
+    <link href="https://unpkg.com/vue-cal/dist/vuecal.css" rel="stylesheet" />
+    <script src="javascripts/calendar.js" defer></script>
+    <title>Calendar</title>
+  </head>
+
+  <body onload="populate()">
+    <button onclick="back()" class="buttonStyling">Back to attendance information</button>
+    <div id="app">
+      <vue-cal class="vuecal--blue-theme" :events="events"> </vue-cal>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,427 @@
+* {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-sizing: border-box;
+	font-family: baloo
+}
+
+button,
+input {
+	background: 0;
+	border: 0;
+	background: 0
+}
+
+.email,
+.login_box {
+	position: absolute
+}
+
+.login_box {
+	width: 466px;
+	height: 55px;
+	overflow: hidden;
+	background: rgb(39, 77, 118, .1);
+	top: 394px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+.email {
+	width: 35px;
+	color: #848788;
+	top: 10px;
+	left: 10px
+}
+
+.password_box {
+	width: 466px;
+	overflow: hidden;
+	background: rgb(39, 77, 118, .1);
+	height: 55px;
+	position: absolute;
+	top: 464px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+.password {
+	position: absolute;
+	width: 63px;
+	color: #848788;
+	top: 10px;
+	left: 10px
+}
+
+.input {
+	left: 10px;
+	width: 90%
+}
+
+.input {
+	position: absolute
+}
+
+.input {
+	color: #000;
+	top: 26px;
+	font-size: 16px
+}
+
+.confirm_button {
+	height: 50px
+}
+
+.confirm_button {
+	width: 223px;
+	top: 0;
+	left: 245px
+}
+
+.confirm,
+.confirm_button,
+.confirm_text {
+	position: absolute;
+	opacity: 1
+}
+
+.confirm {
+	width: 223px;
+	height: 50px;
+	background: #2a2962;
+	top: 0;
+	left: 0;
+	border: #c4c4c4 solid 2px;
+	overflow: hidden
+}
+
+.confirm_text {
+	width: 52px;
+	color: #fff;
+	top: 17px;
+	left: 86px
+}
+
+.title {
+	position: absolute
+}
+
+.title {
+	width: auto;
+	color: #fff;
+	top: 55px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px
+}
+
+.button_text {
+	position: absolute
+}
+
+.button_text {
+	width: 100px;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px
+}
+
+.text {
+	position: absolute
+}
+
+.text {
+	width: auto;
+	color: #4b4b4b;
+	margin: auto;
+	font-size: 10px
+}
+
+.number {
+	width: 25px;
+	color: #03254a;
+	position: absolute;
+	top: 17px;
+	left: 36px;
+	font-size: 16px
+}
+
+.name_box {
+	position: absolute;
+	margin-top: 16%;
+	margin-left: 35%;
+	font-size: 15px;
+	background-color: #d3d3d3;
+	padding: 20px;
+	color: #000;
+	text-align: left;
+	width: 210px
+}
+
+.name_box2 {
+	position: absolute;
+	margin-top: 16%;
+	margin-left: 53%;
+	font-size: 15px;
+	background-color: #d3d3d3;
+	padding: 20px;
+	color: #000;
+	text-align: left;
+	width: 220px
+}
+
+.text_box {
+	background-color: #f0f0f0;
+	color: #000;
+	border: grey;
+	border-style: none;
+	width: 500px;
+	height: 100px;
+	margin-top: 34%;
+	margin-left: 35%;
+	text-align: left
+}
+
+.submit_button {
+	font-size: 25px;
+	background-color: green;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	width: 200px;
+	margin-top: 2%;
+	margin-left: 45%
+}
+
+.box {
+	background-color: #fff;
+	width: 1000px;
+	height: 800px;
+	margin: auto;
+	margin-top: 4%;
+	border: none;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 500px
+}
+
+.number1 {
+	margin-left: 165px;
+	margin-top: 0
+}
+
+.number2 {
+	margin-left: 165px;
+	margin-top: 30px
+}
+
+.number3 {
+	margin-left: 165px;
+	margin-top: 30px
+}
+
+.number4 {
+	margin-left: 165px;
+	margin-top: 30px
+}
+
+.number5 {
+	margin-left: 165px;
+	margin-top: 30px
+}
+
+.number6 {
+	margin-left: 165px;
+	margin-top: 30px
+}
+
+.number-data {
+	background-color: #6cb4ee;
+	border-radius: 50px;
+	color: #fff;
+	height: 50px;
+	width: 50px
+}
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+.hero {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, .6), #00000099), url(../images/background1.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0
+}
+
+.button-box {
+	width: 200px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px rgba(39, 77, 118, .358);
+	border-radius: 30px
+}
+
+.toggle-btn-login {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	outline: 0;
+	position: relative
+}
+
+.toggle-btn-signup {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	outline: 0;
+	position: relative
+}
+
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #2a2962, #2a2962);
+	border-radius: 30px;
+	transition: .5s
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #999;
+	outline: 0;
+	background: 0 0
+}
+
+.submit-btn {
+	width: 85%;
+	padding: 10px 0;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #2a2962, #2a2962);
+	border: 0;
+	outline: 0;
+	border-radius: 30px;
+	color: #fff
+}
+
+.form-box {
+	width: 480px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	padding: 5px;
+	border-radius: 30px;
+	transition: .4s
+}
+
+.input-group {
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s
+}
+
+.check-box {
+	margin: 30px 10px 30px 0
+}
+
+.check-box span {
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute
+}
+
+#login {
+	left: 110px
+}
+
+#register {
+	display: none
+}
+
+main {
+	display: block
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none
+}
+
+h1 {
+	margin: .68em 0
+}
+
+* {
+	box-sizing: border-box
+}
+
+body {
+	font-size: 13px;
+	line-height: 21px;
+	background-color: #fff;
+	color: #333;
+	margin: 0;
+	min-height: 100%;
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+
+.main {
+	justify-content: center;
+	border-radius: 8px;
+	background-color: grey;
+	text-align: center;
+	display: flex;
+	margin-top: 41px;
+	padding: 12px 14px 11px 21px
+}
+
+.submit_position {
+	width: 466px;
+	height: 50px;
+	overflow: hidden;
+	top: 98%;
+	background: #2a2962;
+	border: #c4c4c4 solid 2px;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+#googleButton {
+	padding-left: 175px
+}

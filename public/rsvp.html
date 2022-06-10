@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RSVP Event Page</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;display=swap" rel="stylesheet">
+    <link href="stylesheets/rsvp.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="javascripts/rsvp.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnYtTyeFZyG6FFKom5UlfRA2ox2JjwrX0&libraries=places&callback=initAutocomplete"
+        defer></script>
+
+</head>
+
+<body onload="host_check(); autofill()">
+    <header class="settings_header"></header>
+    <div class="event_title_positioning"></div>
+    <span class="title">Events list</span>
+
+    <div id="rsvp" class="events_center">
+        <button class="log_out_button" onclick="settings()">
+            <span class="log_out_text">Profile</span>
+        </button>
+
+        <h1 class="welcome">Please reply to the Event Invitation</h1>
+
+        <div>
+            <input class="email_rsvp" placeholder="Enter email for confirmation" type = "email" v-model="email">
+        </div>
+
+        <div>
+            <input class="name_box" placeholder="Full Name" v-model="fullName">
+        </div>
+
+        <div class="response">
+            <input type="radio" id="yes" name="response" value="yes" onclick="vueinst.attendance = true">
+            <label for="yes">I will be coming!</label>
+        </div>
+
+        <div class="response2">
+            <input type="radio" id="no" name="response" value="no" onclick="vueinst.attendance = false">
+            <label for="no">I can't make it</label>
+        </div>
+
+        <div v-if="!attendance" class="response3">
+            <label for="availability">Suggest a better time that works for you</label>
+            <input id="availability" type="datetime-local" min="0" v-model="suggestedDateTime">
+        </div>
+
+        <div>
+            <input id="autocomplete" placeholder="Enter your address" type="text" class="form-control address_rsvp">
+        </div>
+
+        <div>
+            <input class="phone_rsvp" placeholder="Enter phone number" v-model="phoneNumber">
+        </div>
+
+        <textarea class="message" rows="6" cols="54" v-model="message" placeholder="If you want to suggest any other times, or have anything else you need to let the host know, leave a message here for the organiser (optional)"></textarea>
+
+
+        <button class="submit_position" v-on:click="submit()">
+            <span class="button_text">Save changes</span>
+        </button>
+    </div>
+</body>
+
+</html>

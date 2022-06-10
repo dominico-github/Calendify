@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="stylesheets/event.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="javascripts/events.js"></script>
+    <meta name="google-signin-scope" content="profile email" />
+    <meta name="google-signin-client_id"
+        content="1056683511837-roifnl5jkqh57j4kk0cpnh3c1ipt59sv.apps.googleusercontent.com" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-plugin_name" content="APP" />
+    <title>Event Home Page</title>
+    <!-- maps -->
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+</head>
+
+<body onload="get_event_info()">
+    <header class="settings_header">
+
+    </header>
+    <button id="authorize_button" onclick="handleAuthClick()"><span class="cal_text">Authorize Google
+            Calendar</span></button>
+    <div class="event_title_positioning"></div>
+    <span class="title">Events list</span>
+    <div class="events_center">
+        <button class="log_out_button" onclick="logOut()">
+            <span class="log_out_text">Log out</span>
+        </button>
+
+
+        <div id="events">
+
+        </div>>
+        <button class="new_event_button" onclick="index=-1;edit_event()">
+            <span class="new_event"></span>
+            <span class="new_event_text">Create new event</span>
+        </button>
+        <button class="settings_button" onclick="settings()">Settings</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+*{
+    box-sizing:border-box;
+    font-family:baloo
+  }
+
+  .exit{
+    background:white;
+    border:darkgrey;
+    background:grey grey;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+  }
+
+  .settings_header {
+      width: auto;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      height: 768px;
+      background: #fff;
+      position: absolute;
+    }
+
+    .event_title_positioning {
+      height: 97px;
+      background: #2a2962;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+
+    }
+
+    .title {
+      position: absolute;
+      width: auto;
+      color: #fff;
+      top: 55px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      font-family: Baloo;
+      box-sizing: border-box;
+    }
+
+    .exit {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 54px;
+    left: 90%;
+    overflow: visible;
+    }
+
+    .settings_box{
+    background: #e9edf1;
+    width: 506px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+
+    }
+
+    .settings_form {
+        text-align:center;
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+
+    input{
+      margin-bottom: 1em;
+      border-top-left-radius:10px;
+      border-top-right-radius:10px;
+      border-bottom-left-radius:10px;
+      border-bottom-right-radius:10px;
+    }
+
+
+
+
+.log_out_button1{
+  width:200px;
+  height:34px;
+  background:#2a2962;
+  position:absolute;
+  top:6%;
+  left:70%;
+  border:#fff solid 1px;
+  overflow:visible;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  box-sizing:border-box;
+}
+.log_out_text1{
+    width:100px;
+    color:#fff;
+    position:absolute;
+    top:15%;
+    left:25%;
+    font-size:16px;
+    font-family:baloo;
+}
+#admin_drop_down{
+    width:510px;
+    color:black;
+    position:absolute;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    box-sizing:border-box;
+    top:15%;
+    left:33.5%;
+    font-size:20px;
+    text-align: center;
+    font-family:baloo;
+}

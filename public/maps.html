@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>calendify</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet" />
+    <link href="stylesheets/map.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnYtTyeFZyG6FFKom5UlfRA2ox2JjwrX0&libraries=places"></script>
+    <script src="javascripts/maps.js" defer></script>
+
+</head>
+
+<body onload="mapData()">
+    <div class="event_title_positioning"></div><span class="title">Suggested places to meet</span>
+    <button class="log_out_button" onclick="back()"><span class="log_out_text">Back</span></button>
+
+
+    <div class="google_maps_img">
+        <img id="map" alt="Google Maps" width="800" height="480">
+    </div>
+
+    <p id="x"></p>
+    <p id="y"></p>
+
+    <div id="text_description_venue">
+        <ol id="places" type="1">
+        </ol>
+    </div>
+
+</body>
+
+</html>

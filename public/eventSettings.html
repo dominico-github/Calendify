@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet" />
+  <link href="stylesheets/settings.css" rel="stylesheet" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnYtTyeFZyG6FFKom5UlfRA2ox2JjwrX0&libraries=places&callback=initAutocomplete"
+    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="javascripts/eventSettings.js"></script>
+  <title>Event Settings</title>
+</head>
+
+<body onload="autofill()">
+  <header class="settings_header"></header>
+  <div class="event_title_positioning"></div>
+  <span class="title">Event Settings</span>
+  <button class="exit" onclick="gotoEvents()">X</button>
+  <div class="center">
+    <div class="event_title">
+      <label class="event_title_text" for="event_title_text">Event title</label>
+      <input id="event_title_text" class="event_name" placeholder="My event" />
+    </div>
+    <div class="venue">
+      <span class="venue_text">Venue</span>
+      <input id="autocomplete" placeholder="Enter your address" type="text" class="form-control venue_input" />
+    </div>
+    <div class="numerical_value">
+      <div class="participant_box">
+        <label class="participant_text" for="participant_text">Date</label>
+        <input id="participant_text" class="input" type="datetime-local" min="0" />
+      </div>
+    </div>
+    <div class="alert_box">
+      <label class="alert_text" for="alert_text">Fee (Dollars)</label>
+      <input id="alert_text" class="input" placeholder="0" type="number" min="0" />
+    </div>
+    <div class="event_title" id="event_description">
+      <label class="event_title_text" for="event_title_text">Event description</label>
+      <textarea id="event_description_input" class="event_name" placeholder="My event"></textarea>
+    </div>
+  </div>
+  <button class="save_position" onclick="send()">
+    <span class="button_text">Save changes</span>
+  </button>
+
+  <div id="host" v-if="hostStatus!=-1">
+    <button class="delete_position" onclick="deleteEvent()">
+      <span class="button_text">Delete event</span>
+    </button>
+  </div>
+
+  <!-- Vue placed in line and at the bottom due to conflicts with Google API -->
+  <script>
+    var vueinst = new Vue({
+      el: "#host",
+      data: {
+        hostStatus: sessionStorage.getItem("eventId"),
+      },
+    });
+  </script>
+</body>
+
+</html>
