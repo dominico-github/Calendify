@@ -3,13 +3,6 @@
 // name, description, time, date, fee, custom_link,
 // street_number, suburb, city, state, postcode
 
-/* 2. Open connection */
-xhttp.open("POST", "/logout", true);
-xhttp.setRequestHeader("content-type", "application/JSON");
-xhttp.send(JSON.stringify(info));
-
-
-
 function get_event_info() {
     get_rsvp_info();
     get_host_info();
