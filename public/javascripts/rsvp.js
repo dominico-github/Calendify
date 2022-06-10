@@ -6,7 +6,7 @@ function checkComplete() {
         address: document.getElementById("autocomplete").value,
         phoneNumber: vueinst.phoneNumber,
         message: vueinst.message
-    }
+    };
     let returnValue = true;
 
     if (rsvpInfo.fullName == "") {
@@ -142,7 +142,7 @@ var vueinst = new Vue({
                 customLink: customLink,
                 suggestedTime: vueinst.suggestedDateTime.split('T')[1],
                 suggestedDate: vueinst.suggestedDateTime.split('T')[0]
-            }
+            };
             xhttp.open("POST", '/event/rsvp', true);
             xhttp.setRequestHeader("content-type", "application/JSON");
             xhttp.send(JSON.stringify(rsvpInfo));

@@ -14,7 +14,7 @@ CREATE TABLE users(
     PRIMARY KEY (id)
 );
 
-INSERT INTO users (username, fullname, email, phone_number, password, isAdmin) VALUES ("admin", "admin", "admin@admin.com","1111111111", "password123", true);
+INSERT INTO users (username, fullname, email, phone_number, password, isAdmin) VALUES ("admin", "admin", "admin@admin.com","1111111111", "$argon2i$v=19$m=4096,t=3,p=1$X6uhb/ZQeA29aVc1N7VCzw$S2u7BKjpntSBmQ69XmiC3aBU3SqYJxGPfahgTED5MTQ", true);
 
 CREATE TABLE Events (
     id int AUTO_INCREMENT,

@@ -17,7 +17,7 @@ function autofill() {
         let location = document.getElementById('autocomplete');
         location.value = eventDetails.location;
       }
-    }
+    };
     xhttp.open("GET", "/event/autofill?id=" + encodeURIComponent(eventId), true);
     xhttp.send();
   }
@@ -42,12 +42,12 @@ function initAutocomplete() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 function checkComplete() {
-  let name = document.getElementById('event_title_text').value
-  let description = document.getElementById('event_description_input').value
-  let date = document.getElementById('participant_text').value.split('T')[0]
-  let time = document.getElementById('participant_text').value.split('T')[1]
-  let fee = document.getElementById('alert_text').value
-  let location = document.getElementById('autocomplete').value
+  let name = document.getElementById('event_title_text').value;
+  let description = document.getElementById('event_description_input').value;
+  let date = document.getElementById('participant_text').value.split('T')[0];
+  let time = document.getElementById('participant_text').value.split('T')[1];
+  let fee = document.getElementById('alert_text').value;
+  let location = document.getElementById('autocomplete').value;
 
   let info = {
     name: name,
@@ -94,13 +94,13 @@ function send() {
   }
 
   let eventId = sessionStorage.getItem("eventId");
-  let name = document.getElementById('event_title_text').value
-  let description = document.getElementById('event_description_input').value
+  let name = document.getElementById('event_title_text').value;
+  let description = document.getElementById('event_description_input').value;
 
-  let date = document.getElementById('participant_text').value.split('T')[0]
-  let time = document.getElementById('participant_text').value.split('T')[1]
-  let fee = document.getElementById('alert_text').value
-  let location = document.getElementById('autocomplete').value
+  let date = document.getElementById('participant_text').value.split('T')[0];
+  let time = document.getElementById('participant_text').value.split('T')[1];
+  let fee = document.getElementById('alert_text').value;
+  let location = document.getElementById('autocomplete').value;
   var link = Math.random().toString(20).slice(4, 16);
 
   let info = {
@@ -112,7 +112,7 @@ function send() {
     fee: fee,
     location: location,
     custom_link: link
-  }
+  };
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -152,7 +152,7 @@ function send() {
   xhttp.open("POST", "/add", true);
   xhttp.setRequestHeader("Content-type", "application/json");
   xhttp.send(JSON.stringify(info));
-};
+}
 
 function initialize() {
   var input = document.getElementById('searchTextField');
@@ -178,7 +178,7 @@ function deleteEvent() {
   xhttp.open("POST", "/event/delete", true);
   xhttp.setRequestHeader("Content-type", "application/json");
   xhttp.send(JSON.stringify({ id: eventId }));
-};
+}
 
 function gotoEvents() {
   window.location.href = "/event.html";

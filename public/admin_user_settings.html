@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+    <title>Admin User Settings</title>
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type = "text/css" href="stylesheets/userSettings.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/userSettings.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascripts/admin_management.js" defer></script>
 </head>
@@ -12,41 +13,34 @@
 <body onload="getUsers()">
 
     <header class="settings_header"></header>
-        <div class="event_title_positioning"></div><span class="title">User Settings</span>
-        <button onclick="back()" class="exit" onclick="">X
-        </button>
-    <button class="log_out_button1" onclick="window.location = '/signupAdmin.html'"><span class="log_out_text1">Create Admin</span></button>
+    <div class="event_title_positioning"></div><span class="title">User Settings</span>
+    <button onclick="back()" class="exit">X</button>
+    <button class="log_out_button1" onclick="window.location = '/signupAdmin.html'"><span class="log_out_text1">Create
+            Admin</span></button>
 
 
     <select name="User Admin" id="admin_drop_down" onchange="LoadInfo()">
     </select>
     <div class="settings_box">
-    <div class="settings_form">
+        <div class="settings_form">
             <label for="email">Email Address:</label><br>
-            <input type="email" name = "email" id="email"><br>
+            <input type="email" name="email" id="email"><br>
 
             <label for="username">Username:</label><br>
-            <input type="text" name = "username" id="username"><br>
+            <input type="text" name="username" id="username"><br>
 
             <label for="password">Password:</label><br>
-            <input type="password" name = "password" id="password"><br>
+            <input type="password" name="password" id="password"><br>
 
             <label for="givennname">Name:</label><br>
-            <input type="text" name = "givenname" id="givennname"><br>
-
-
-            <!-- <label for=""></label><br> -->
-
+            <input type="text" name="givenname" id="givennname"><br>
 
             <label for="phonenumber">Phone Number:</label><br>
-            <input type="number" name = "phonenumber" id="phonenumber"><br>
+            <input type="number" name="phonenumber" id="phonenumber"><br>
             <input onclick="UpdateSpecificDetails()" type="submit" value="submit" />
             <input onclick="deleteUser()" type="submit" value="Delete" />
 
-
-<!-- Address (split into the appropriate fields)	Text -->
-
-    </div>
+        </div>
     </div>
 </body>
 

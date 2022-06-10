@@ -16,21 +16,21 @@ function back() {
 function getUsers() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200 || this.status == 304) {
-    let users = JSON.parse(this.response);
-    let options = document.getElementById("admin_drop_down");
-    for (let key of users){
-    options.innerHTML += "<option value="+key.username+">"+key.username+"</option>"
+    if (this.readyState == 4 && this.status == 200 || this.status == 304) {
+      let users = JSON.parse(this.response);
+      let options = document.getElementById("admin_drop_down");
+      for (let key of users) {
+        options.innerHTML += "<option value=" + key.username + ">" + key.username + "</option>";
+      }
+      LoadInfo();
     }
-    LoadInfo();
-  }
-  }
+  };
   xhttp.open("GET", "/Users", true);
   xhttp.send();
 
-};
+}
 
-function adminSignUp(){
+function adminSignUp() {
   window.location.replace("/signupAdmin.html");
 }
 
@@ -38,23 +38,25 @@ function adminSignUp(){
 function LoadInfo() {
   let user = document.getElementById("admin_drop_down").value;
 
-  if(user == undefined){
+  if (user == undefined) {
     return;
   }
-   var xhttp = new XMLHttpRequest();
+  var xhttp = new XMLHttpRequest();
 
-   xhttp.onreadystatechange = function () {
+  xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      try{var obj = JSON.parse(this.response);
+      try {
+        var obj = JSON.parse(this.response);
 
-      document.getElementById("email").value = obj.email;
-      document.getElementById("username").value = obj.username;
-      document.getElementById("password").value = obj.password;
-      document.getElementById("phonenumber").value = obj.phone_number;
-      if(obj.fullname){
-        document.getElementById("givennname").value = obj.fullname;
-      }}
-      catch(err){
+        document.getElementById("email").value = obj.email;
+        document.getElementById("username").value = obj.username;
+        document.getElementById("password").value = obj.password;
+        document.getElementById("phonenumber").value = obj.phone_number;
+        if (obj.fullname) {
+          document.getElementById("givennname").value = obj.fullname;
+        }
+      }
+      catch (err) {
         alert("cannot update google accounts");
       }
     } else if (this.readyState == 4 && this.status == 403) {
@@ -63,7 +65,7 @@ function LoadInfo() {
     }
   };
 
-  currentuser = {
+  let currentuser = {
     username: user,
   };
 
@@ -118,7 +120,7 @@ function deleteUser() {
     if (this.readyState == 4 && this.status == 200) {
       let information = {
         id: JSON.parse(this.response)[0].id
-      }
+      };
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -365,9 +367,9 @@ function Signup() {
         type: 'success',
         title: "SUCESSFUL!",
         text: "Admin has been created!",
-    }).then(function() {
+      }).then(function () {
         window.location = "/admin.html";
-    });
+      });
     } else if (this.readyState == 4 && this.status == 403) {
       document.getElementById("signupError").innerText =
         "User already exists. Please use login.";

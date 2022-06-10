@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Baloo&amp;display=swap" rel="stylesheet">
     <link href="stylesheets/event.css" rel="stylesheet">
     <title>Admin page</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="javascripts/adminhome.js" defer></script>
+    <!-- maps -->
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 </head>
 
 <body onload="get_event_info()">
     <header class="settings_header">
 
     </header>
-    <button id="authorize_button" onclick="handleAuthClick()"><span class="cal_text">Authorize Google Calendar</span></button>
+    <button id="authorize_button" onclick="handleAuthClick()"><span class="cal_text">Authorize Google
+            Calendar</span></button>
     <div class="event_title_positioning"></div>
     <span class="title">Admin Page</span>
     <div class="events_center">
-            <button class="log_out_button" onclick="manageUsers()">
-                <span class="log_out_text">User Management</span>
-            </button>
+        <button class="log_out_button_admin" onclick="manageUsers()">
+            <span class="log_out_text_admin">User Management</span>
+        </button>
 
-        <button class="log_out_button" onclick = "logOut()">
+        <button class="admin_out_button" onclick="logOut()">
             Log Out
         </button>
 
-    <div id="events">
+        <div id="events">
 
+        </div>
+        <button class="new_event_button" onclick="index=-1;edit_event()">
+            <span class="new_event"></span>
+            <span class="new_event_text">Create new event</span>
+        </button>
     </div>
-        <a href="settings.html">
-            <button class="new_event_button" onclick="index=-1;edit_event()">
-                <span class="new_event"></span>
-                <span class="new_event_text">Create new event</span>
-            </button>
-        </a>
-    </div>
-<!-- maps -->
-<script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
-<script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+
 </body>
+
 </html>

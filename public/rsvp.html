@@ -29,7 +29,7 @@
         <h1 class="welcome">Please reply to the Event Invitation</h1>
 
         <div>
-            <input class="email_rsvp" placeholder="Enter email for confirmation" type = "email" v-model="email">
+            <input class="email_rsvp" placeholder="Enter email for confirmation" type="email" v-model="email">
         </div>
 
         <div>
@@ -59,7 +59,8 @@
             <input class="phone_rsvp" placeholder="Enter phone number" v-model="phoneNumber">
         </div>
 
-        <textarea class="message" rows="6" cols="54" v-model="message" placeholder="If you want to suggest any other times, or have anything else you need to let the host know, leave a message here for the organiser (optional)"></textarea>
+        <textarea class="message" rows="6" cols="54" v-model="message"
+            placeholder="If you want to suggest any other times, or have anything else you need to let the host know, leave a message here for the organiser (optional)"></textarea>
 
 
         <button class="submit_position" v-on:click="submit()">

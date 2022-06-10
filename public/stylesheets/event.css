@@ -405,6 +405,28 @@
 	border:#fff solid 1px;
 	overflow:visible
   }
+
+  .log_out_button_admin{
+	width:200px;
+	height:34px;
+	background:#2a2962;
+	position:absolute;
+	top:5%;
+	left:80%;
+	border:#fff solid 1px;
+	overflow:visible
+  }
+  .admin_out_button {
+	width:100px;
+	height:34px;
+	background:#2a2962;
+	position:absolute;
+	top:5%;
+	left:70%;
+	border:#fff solid 1px;
+	overflow:visible;
+	color:white
+  }
   .back_button{
 	width:100px;
 	height:34px;
@@ -447,11 +469,11 @@
 	border:#274d76 solid 1px
   }
   .event_content_text{
-	width:200px;
+	width:500px;
 	color:#0f0f0f;
 	position:absolute;
 	top:30px;
-	left:45%;
+	left:0%;
 	font-size:18px
   }
   .entries_element,.event_content_elments{
@@ -616,6 +638,15 @@
 	position:absolute;
 	top:3px;
 	left:23px;
+	font-size:16px
+  }
+
+  .log_out_text_admin{
+	width:190px;
+	color:#fff;
+	position:absolute;
+	top:3px;
+	left:15px;
 	font-size:16px
   }
   .response{

@@ -2,25 +2,6 @@
 // Access info via row.[variable name] where variable names can be
 // name, description, time, date, fee, custom_link,
 // street_number, suburb, city, state, postcode
-var xhttp = new XMLHttpRequest();
-var info = {
-    token: sessionStorage.getItem("googleToken")
-}
-xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 202) {
-        sessionStorage.clear();
-        gapi.load("auth2", function () {
-            gapi.auth2.init();
-            window.location.href = "https://accounts.google.com/logout";
-        });
-        var auth2 = gapi.auth2.getAuthInstance();
-        return;
-    }
-    else {
-        sessionStorage.clear();
-        window.location.href = "/login.html";
-    }
-};
 
 /* 2. Open connection */
 xhttp.open("POST", "/logout", true);
