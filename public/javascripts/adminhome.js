@@ -49,7 +49,7 @@ function edit_event() {
     else {
         sessionStorage.setItem("eventId", eventIds[index]);
     }
-    window.location.replace("/settings.html");
+    window.location.replace("/eventSettings.html");
 }
 
 function attendance_info() {
