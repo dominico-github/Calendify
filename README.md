@@ -1,4 +1,4 @@
-# WDC-ByB-Final
+# Calendify
 
 Welcome to Calendify!
 
